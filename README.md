@@ -10,23 +10,21 @@ This project focuses on building a comprehensive ETL (Extract, Transform, Load) 
 1. Programming Language - Python
 2. Scripting Language - SQL
 3. Containerization - Docker
-<!-- 4. Orchestration - Airflow -->
+4. Database - PostgreSQL
+5. Orchestration - Airflow
 
 ## Dataset Used
 [Retails Orders](https://kaggle.com/datasets/ankitbansal06/retail-orders): This dataset contains the years 2022 and 2023 global mart sales.
 
-<!-- ## Data Model
-![Data model image](data_model.jpeg) -->
+## Data Model
+![Data model image](data_model.png)
 
 ## Scripts for project
-1. [Extract Python File](extract.ipynb)
-<!-- 2. [Load Python File](mage-files/load.py)
-3. [Transform Python File](mage-files/transform.py) -->
+1. [ETL Python File](etl.ipynb)
+2. [Database connection](db.py)
 
 ## Project explained
-Python is used to handle the ETL process - extracting from Kaggle using the kaggle package, pandas to transform the data by cleaning, and removing duplicates, and finally loading the cleanses data into Postgres database. 
-
-<!-- Airflow to manage workflow orchestration by building, scheduling and monitoring the data pipeline -->
+Python is used to handle the ETL process - extracting from Kaggle using the kaggle package, pandas to transform the data by cleaning, and removing duplicates, and finally loading the cleanses data into Postgres database. Airflow is used to manage workflow orchestration and handle automation by building, scheduling and monitoring the data pipeline.
 
 ## How to run the project:
 1. Set up and activate python virtual environment: 
